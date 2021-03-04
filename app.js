@@ -6,7 +6,7 @@ const presidents = [
   { name: "George H.W. Bush", terms: 1, party: "R" },
   { name: "Ronald Reagan", terms: 2, party: "R" },
   { name: "Jimmy Carter", terms: 1, party: "D" },
-  { name: "Gerlad Ford", terms: 1, party: "R" },
+  { name: "Gerald Ford", terms: 1, party: "R" },
   { name: "Richard Nixon", terms: 2, party: "R" },
   { name: "John F. Kennedy", terms: 1, party: "D" },
   { name: "Lyndon Johnson", terms: 2, party: "D" },
@@ -28,7 +28,7 @@ console.table(oneTermRepublicans);
 
 //3) return only the last three presidents
 
-const lastThreePresidents = presidents.splice(0, 3);
+const lastThreePresidents = presidents.slice(0, 3);
 console.table(lastThreePresidents);
 
 //4) log all dems who served 2 terms. HINT use chain filter, filter and slice
